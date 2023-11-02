@@ -65,7 +65,7 @@
             <a id="nextFileLink" class="nav" href="d_f35dcf436292fe87_user_interests_repository_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io/en/7.3.2">coverage.py v7.3.2</a>,
-            created at 2023-10-19 00:08 +0000
+            created at 2023-11-01 23:57 +0000
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"/>
@@ -173,7 +173,7 @@
     <p class="mis show_mis"><span class="n"><a id="t91" href="#t91">91</a></span><span class="t">            <span class="nam">to_follow</span> <span class="op">=</span> <span class="nam">Users</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">filter</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t92" href="#t92">92</a></span><span class="t">                <span class="nam">Users</span><span class="op">.</span><span class="nam">id</span> <span class="op">==</span> <span class="nam">follow_info</span><span class="op">.</span><span class="nam">following_id</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t93" href="#t93">93</a></span><span class="t">            <span class="op">)</span><span class="op">.</span><span class="nam">one</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t94" href="#t94">94</a></span><span class="t">            <span class="nam">to_update</span><span class="op">.</span><span class="nam">followers</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">to_follow</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t94" href="#t94">94</a></span><span class="t">            <span class="nam">to_update</span><span class="op">.</span><span class="nam">following</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">to_follow</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t95" href="#t95">95</a></span><span class="t">            <span class="nam">to_update</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t96" href="#t96">96</a></span><span class="t">            <span class="key">return</span> <span class="key">True</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t97" href="#t97">97</a></span><span class="t">        <span class="key">except</span> <span class="nam">NoResultFound</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -187,7 +187,7 @@
     <p class="mis show_mis"><span class="n"><a id="t105" href="#t105">105</a></span><span class="t">            <span class="nam">to_unfollow</span> <span class="op">=</span> <span class="nam">Users</span><span class="op">.</span><span class="nam">query</span><span class="op">.</span><span class="nam">filter</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t106" href="#t106">106</a></span><span class="t">                <span class="nam">Users</span><span class="op">.</span><span class="nam">id</span> <span class="op">==</span> <span class="nam">follow_info</span><span class="op">.</span><span class="nam">following_id</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t107" href="#t107">107</a></span><span class="t">            <span class="op">)</span><span class="op">.</span><span class="nam">one</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t108" href="#t108">108</a></span><span class="t">            <span class="nam">to_update</span><span class="op">.</span><span class="nam">followers</span><span class="op">.</span><span class="nam">remove</span><span class="op">(</span><span class="nam">to_unfollow</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t108" href="#t108">108</a></span><span class="t">            <span class="nam">to_update</span><span class="op">.</span><span class="nam">following</span><span class="op">.</span><span class="nam">remove</span><span class="op">(</span><span class="nam">to_unfollow</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t109" href="#t109">109</a></span><span class="t">            <span class="nam">to_update</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t110" href="#t110">110</a></span><span class="t">            <span class="key">return</span> <span class="key">True</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t111" href="#t111">111</a></span><span class="t">        <span class="key">except</span> <span class="nam">ValueError</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -204,7 +204,7 @@
             <a id="nextFileLink" class="nav" href="d_f35dcf436292fe87_user_interests_repository_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io/en/7.3.2">coverage.py v7.3.2</a>,
-            created at 2023-10-19 00:08 +0000
+            created at 2023-11-01 23:57 +0000
         </p>
     </div>
 </footer>
